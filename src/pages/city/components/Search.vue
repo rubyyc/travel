@@ -55,8 +55,16 @@ export default {
   },
   mounted () {
     this.scroll = new Bscroll(this.$refs.search)
+  },
+  methods: {
+    handleCityClick (city) {
+      // console.log(city)
+      // this.$store.dispatch('changeCity', city)
+      this.$store.commit('changeCity', city)
+    }
   }
 }
+
 </script>
 
 <style lang="stylus" scoped>
