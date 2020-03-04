@@ -2,7 +2,7 @@
   <div>
     <div class="title">热销</div>
     <ul>
-      <li class="item border-bottom" v-for="item in recommendList" :key="item.id">
+      <li class="item border-bottom" v-for="item in list" :key="item.id">
         <img class="item-img" :src="item.imgUrl" alt="">
         <div class="item-info">
           <p class="item-tile">{{item.title}}</p>
@@ -17,34 +17,37 @@
 <script>
 export default {
   name: 'HomeRecommend',
+  props: {
+    list: Array
+  },
   data () {
     return {
-      recommendList: [
-        {
-          id: '0001',
-          imgUrl: 'https://imgs.qunarzz.com/sight/p0/1609/ca/ca736c64da554ffaa3.water.jpg_200x200_5efad21c.jpg',
-          title: '合肥融创乐园',
-          desc: '合肥融创乐园'
-        },
-        {
-          id: '0002',
-          imgUrl: 'https://imgs.qunarzz.com/sight/p0/1609/ca/ca736c64da554ffaa3.water.jpg_200x200_5efad21c.jpg',
-          title: '合肥融创乐园',
-          desc: '合肥融创乐园'
-        },
-        {
-          id: '0003',
-          imgUrl: 'https://imgs.qunarzz.com/sight/p0/1609/ca/ca736c64da554ffaa3.water.jpg_200x200_5efad21c.jpg',
-          title: '合肥融创乐园',
-          desc: '合肥融创乐园'
-        },
-        {
-          id: '0004',
-          imgUrl: 'https://imgs.qunarzz.com/sight/p0/1609/ca/ca736c64da554ffaa3.water.jpg_200x200_5efad21c.jpg',
-          title: '合肥融创乐园',
-          desc: '合肥融创乐园'
-        }
-      ]
+      // recommendList: [
+      //   {
+      //     id: '0001',
+      //     imgUrl: 'https://imgs.qunarzz.com/sight/p0/1609/ca/ca736c64da554ffaa3.water.jpg_200x200_5efad21c.jpg',
+      //     title: '合肥融创乐园',
+      //     desc: '合肥融创乐园'
+      //   },
+      //   {
+      //     id: '0002',
+      //     imgUrl: 'https://imgs.qunarzz.com/sight/p0/1609/ca/ca736c64da554ffaa3.water.jpg_200x200_5efad21c.jpg',
+      //     title: '合肥融创乐园',
+      //     desc: '合肥融创乐园'
+      //   },
+      //   {
+      //     id: '0003',
+      //     imgUrl: 'https://imgs.qunarzz.com/sight/p0/1609/ca/ca736c64da554ffaa3.water.jpg_200x200_5efad21c.jpg',
+      //     title: '合肥融创乐园',
+      //     desc: '合肥融创乐园'
+      //   },
+      //   {
+      //     id: '0004',
+      //     imgUrl: 'https://imgs.qunarzz.com/sight/p0/1609/ca/ca736c64da554ffaa3.water.jpg_200x200_5efad21c.jpg',
+      //     title: '合肥融创乐园',
+      //     desc: '合肥融创乐园'
+      //   }
+      // ]
     }
   }
 }
