@@ -6,8 +6,16 @@
 
 <script>
 export default {
-  name: 'CitySearch'
+  name: 'CitySearch',
+  methods: {
+    handleCityClick (city) {
+      // console.log(city)
+      // this.$store.dispatch('changeCity', city)
+      this.$store.commit('changeCity', city)
+    }
+  }
 }
+
 </script>
 
 <style lang="stylus" scoped>
