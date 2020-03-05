@@ -8,6 +8,7 @@ import fastClick from 'fastClick'
 import 'styles/reset.css'
 import 'styles/border.css'
 import 'styles/iconfont.css'
+import 'babel-polyfill'
 import VueAwesomeSwiper from 'vue-awesome-swiper'
 import store from './store'
 require('swiper/dist/css/swiper.css')
