@@ -25,7 +25,7 @@ export default {
   },
   methods: {
     handleScroll () {
-      console.log('sss')
+      // console.log('sss')
       const top = document.documentElement.scrollTop
       if (top > 60) {
         let opacity = (top / 140)
@@ -37,7 +37,7 @@ export default {
       } else {
         this.showAbs = true
       }
-      console.log(document.documentElement.scrollTop)
+      // console.log(document.documentElement.scrollTop)
     }
   },
   activated () {
@@ -65,6 +65,7 @@ export default {
       color #fff
       font-size .4rem
   .header-fixed
+    z-index 2
     position fixed
     top 0
     left 0
